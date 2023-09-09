@@ -18,7 +18,6 @@
     "husky": "^8.0.3",
     "lint-staged": "^14.0.1"
   },
-  "packageManager": "pnpm@8.6.10",
   "lint-staged": {
     "apps/**/*.{js,ts,jsx,tsx}": [
       "eslint --fix"
@@ -26,5 +25,8 @@
     "*.json": [
       "prettier --write"
     ]
+  },
+  "volta": {
+    "node": "18.17.1"
   }
 }
