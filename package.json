@@ -2,7 +2,8 @@
   "name": "turbo-monorepo-nestjs-nextjs",
   "private": true,
   "workspaces": [
-    "apps/*"
+    "apps/*",
+    "packages/*"
   ],
   "scripts": {
     "build": "turbo run build",
@@ -13,10 +14,13 @@
   },
   "devDependencies": {
     "eslint": "^8.48.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^14.0.1",
     "prettier": "^3.0.3",
     "turbo": "latest",
-    "husky": "^8.0.3",
-    "lint-staged": "^14.0.1"
+    "autoprefixer": "10.4.15",
+    "postcss": "8.4.29",
+    "tailwindcss": "3.3.3"
   },
   "lint-staged": {
     "apps/**/*.{js,ts,jsx,tsx}": [

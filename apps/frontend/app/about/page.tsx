@@ -1,7 +1,12 @@
-export default function About() {
+// Create a about page component nextjs
+import { CommonButton } from 'ui'
+function AboutPage() {
   return (
-    <>
-      <h1>This is about page</h1>
-    </>
-  );
+    <div>
+      <CommonButton>Hello</CommonButton>
+      <h1 className='text-3xl font-bold underline text-blue-500'>About</h1>
+    </div>
+  )
 }
+
+export default AboutPage
